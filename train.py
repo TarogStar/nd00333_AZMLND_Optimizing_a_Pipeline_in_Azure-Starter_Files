@@ -71,5 +71,9 @@ def main():
     accuracy = model.score(x_test, y_test)
     run.log("Accuracy", np.float(accuracy))
 
+    import joblib
+
+    joblib.dump(model, 'automl_model.joblib')
+
 if __name__ == '__main__':
     main()
