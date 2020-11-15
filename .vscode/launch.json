@@ -10,7 +10,7 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
-            "args": ["--max_iter","1000"]
+            "args": ["--max_iter","200", "--C","0.001"]
         }
     ]
 }
