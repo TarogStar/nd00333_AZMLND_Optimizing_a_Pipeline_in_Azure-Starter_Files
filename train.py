@@ -14,8 +14,7 @@ from azureml.data.dataset_factory import TabularDatasetFactory
 # Data is located at:
 datapath = "https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv"
 
-from azureml.core import Dataset
-ds = Dataset.Tabular.from_delimited_files(path=datapath)
+ds = TabularDatasetFactory.from_delimited_files(path=datapath)
 
 def clean_data(data):
     # Dict for cleaning data
